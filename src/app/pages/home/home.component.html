@@ -1,0 +1,14 @@
+<div class="home">
+  <app-header [nameUser]="nameUser"></app-header>
+  <div class="home_content">
+    <button
+      class="home_btn-favorites"
+      color="accent"
+      (click)="showArtists()"
+      mat-raised-button
+    >
+      My favorites songs
+    </button>
+    <router-outlet></router-outlet>
+  </div>
+</div>

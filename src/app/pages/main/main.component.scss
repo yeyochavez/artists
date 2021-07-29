@@ -1,0 +1,56 @@
+@import "../../../styles/fonts.scss";
+@import "../../../styles/mixins.scss";
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main_title {
+  text-align: center;
+  font-size: 6rem;
+  color: white;
+  line-height: 1;
+  margin-bottom: 20px;
+  font-family: $kaushan;
+  text-shadow: 0 0 10px black;
+
+  @include desktop {
+    font-size: 4rem;
+  }
+}
+
+.main_information {
+  width: 80%;
+  font-family: $spartan;
+  font-weight: bold;
+
+  @include desktop {
+    width: 50%;
+  }
+}
+
+.main_information-content {
+  display: flex;
+  justify-content: center;
+}
+
+.main_information-input {
+  width: 100%;
+  font-size: 1.5rem;
+  @include desktop {
+    width: 80%;
+  }
+}
+
+.main_information-actions {
+  display: flex;
+  justify-content: center;
+}
+.main_information-actions button {
+  width: 80%;
+}

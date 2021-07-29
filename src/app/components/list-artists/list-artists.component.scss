@@ -1,0 +1,12 @@
+@import "../../../styles/mixins.scss";
+
+.list-artists {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+  @include desktop {
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,15 @@
+<mat-expansion-panel class="album">
+  <mat-expansion-panel-header>
+    <mat-panel-title
+      ><p class="album_name">{{ album.name }} <small> {{ album.year }}</small></p>
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+  <ul class="album_list">
+    <li 
+    *ngFor="let song of getSongs()" 
+    class="album_item"
+    (click)="selectSong(song)">
+    {{ song.title }}
+  </li>
+  </ul>
+</mat-expansion-panel>

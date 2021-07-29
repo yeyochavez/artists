@@ -1,0 +1,30 @@
+@import "../../../styles/fonts.scss";
+@import "../../../styles/mixins.scss";
+
+.header {
+  padding: 30px 20px 10px 20px;
+  color: white;
+}
+
+.header_greeting {
+  text-align: center;
+  font-size: 3rem;
+  font-family: $kaushan;
+  text-shadow: 0 0 10px black;
+}
+
+.header_current-song {
+  margin-top: 30px;
+  font-family: $spartan;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1;
+
+  @include desktop {
+    font-size: 1rem;
+  }
+}
+
+.header_current-song span {
+  font-weight: 600;
+}

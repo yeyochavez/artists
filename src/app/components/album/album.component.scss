@@ -1,0 +1,24 @@
+@import "../../../styles/fonts.scss";
+
+.album {
+  margin: 10px 0;
+  box-sizing: border-box !important !important;
+}
+
+.album_name {
+  text-transform: uppercase;
+}
+
+.album_list {
+  list-style-type: none;
+}
+
+.album_item {
+  padding: 20px 10px;
+  font-family: $spartan;
+  cursor: pointer;
+  
+  &:hover {
+    border-bottom: 2px solid rgb(185, 29, 115);
+  }
+}

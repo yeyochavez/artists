@@ -1,0 +1,4 @@
+<header class="header backgroun-gradient">
+  <p class="header_greeting">Welcome {{ nameUser }}</p>
+  <p *ngIf="getSongTitle()" class="header_current-song">You are listening to  <span>♫ {{ getSongTitle() }}</span></p>
+</header>

@@ -1,0 +1,19 @@
+<mat-card *ngIf="artist" class="artist">
+  <mat-card-content class="artist_content">
+    <img
+      class="artist_photo"
+      src="../../../assets/img/{{ artist.photo }}"
+      alt="Photo {{ artist.artist }}"
+    />
+    <div class="artist_informations">
+      <p class="artist_name">
+        {{ artist.artist }}
+      </p>
+      <app-album
+        *ngFor="let album of artist.albums"
+        [album]="album"
+        (songEmit)="selectSong($event)"
+      ></app-album>
+    </div>
+  </mat-card-content>
+</mat-card>

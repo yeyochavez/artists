@@ -1,0 +1,7 @@
+<div class="list-artists">
+<app-abstract-artist
+  *ngFor="let artist of artists"
+  [artist]="artist"
+  (artistEmit)="selectArtist($event)"
+></app-abstract-artist>
+</div>

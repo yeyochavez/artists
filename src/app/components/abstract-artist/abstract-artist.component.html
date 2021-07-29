@@ -1,0 +1,15 @@
+<mat-card class="abstract-artist" (click)="selectArtist()">
+  <mat-card-content class="abstract-artist_content">
+    <img
+      class="abstract-artist_photo"
+      src="../../../assets/img/{{ artist.photo }}"
+      alt="Photo {{ artist.artist }}"
+    />
+    <div class="abstract_information">
+      <p class="abstract-artist_name">{{ artist.artist }}</p>
+      <p class="abstract-artist_total-albums">
+        Total albums: {{ artist.totalAlbums }}
+      </p>
+    </div>
+  </mat-card-content>
+</mat-card>

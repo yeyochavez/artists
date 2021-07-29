@@ -1,0 +1,29 @@
+<div class="main backgroun-gradient">
+  <p class="main_title">Hello!</p>
+
+  <mat-card class="main_information">
+    <mat-card-header>
+      <mat-card-title>I wanna meet you :)</mat-card-title>
+      <mat-card-subtitle>Please, enter your name</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content class="main_information-content">
+      <mat-form-field class="main_information-input" appearance="fill">
+        <mat-label>Name</mat-label>
+        <input [formControl]="nameUserControl" matInput type="text" />
+      </mat-form-field>
+    </mat-card-content>
+
+    <mat-card-actions class="main_information-actions">
+      <button
+        mat-raised-button
+        color="accent"
+        type="submit"
+        [disabled]="!nameUserControl.valid"
+        (click)="sendInformation()"
+      >
+        Enter
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>

@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body { height: 100%; font-size: 14px; box-sizing: border-box; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.backgroun-gradient {
+    background: #da4453;
+    background: linear-gradient(to left, #89216b, #da4453);
+}

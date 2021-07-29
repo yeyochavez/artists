@@ -1,0 +1,38 @@
+@import "../../../styles/fonts.scss";
+@import "../../../styles/mixins.scss";
+
+.artist_content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @include desktop {
+    flex-direction: row;
+  }
+}
+
+.artist_photo {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+
+  @include desktop {
+    width: 300px;
+    border-radius: 50%;
+  }
+}
+
+.artist_informations {
+  @include desktop {
+    padding: 50px;
+  }
+}
+
+.artist_name {
+  margin-top: 20px;
+  line-height: 1;
+  font-size: 2.5rem;
+  color: #909090;
+  font-family: $spartan;
+  text-align: center;
+}
